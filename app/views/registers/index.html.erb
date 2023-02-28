@@ -1,0 +1,10 @@
+<h1>Registers#index</h1>
+<p>Find me in app/views/registers/index.html.erb</p>
+<div class="container">
+  <h1>My Registers</h1>
+  <% if @registers.present? %>
+    <% @registers.each do |register| %>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><%= register.tour %></h5>
+          <p class="card-text">Date: <%= register.date.strftime('%
